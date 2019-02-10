@@ -1,2 +1,2 @@
 # docker-eosio-nodeos-plugins
-EOSIO nodeos compiled with some useful plugins
+Docker builder for EOSIO nodeos compiled with some useful plugins
