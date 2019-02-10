@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker push liquidapps/eosio-plugins:$TRAVIS_BRANCH
+docker push liquidapps/eosio-plugins:dummy
