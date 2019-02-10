@@ -2,9 +2,7 @@ language: ruby
 
 services:
   - docker
-
 before_install:
-  - docker build -t liquidapps/eosio-plugins .
-
+  - docker build --build-arg symbol=EOS --build-arg branch=$TRAVIS_BRANCH -t liquidapps/eosio-plugins:$TRAVIS_BRANCH .
 script:
-  - docker ps
+  - bash docker_push
