@@ -4,7 +4,7 @@ ARG symbol=SYS
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssl ca-certificates pkg-config libzmq5-dev && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/eosrio/eos_zmq_plugin.git
-ENV LOCAL_CMAKE_FLAGS="-DEOSIO_ADDITIONAL_PLUGINS=/eos_zmq_plugin"
+ENV LOCAL_CMAKE_FLAGS=-DEOSIO_ADDITIONAL_PLUGINS=/eos_zmq_plugin
 
 RUN git clone -b $branch https://github.com/EOSIO/eos.git --recursive \
     && cd eos && echo "$branch:$(git rev-parse HEAD)" > /etc/eosio-version \
