@@ -44,6 +44,10 @@ RUN git clone https://github.com/necokeine/AWS_plugin.git
 RUN git clone https://github.com/TP-Lab/kafka_plugin.git
 
 
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-Linux-x86_64.sh \
+    && bash cmake-3.13.4-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir --skip-license \
+    && rm cmake-3.13.4-Linux-x86_64.sh
+
 RUN git clone -b $branch https://github.com/EOSIO/eos.git --recursive \
     && cd eos && echo "$branch:$(git rev-parse HEAD)" > /etc/eosio-version \
     && cmake -H. -B"/tmp/build" -GNinja -DCMAKE_BUILD_TYPE=Release -DWASM_ROOT=/opt/wasm -DCMAKE_CXX_COMPILER=clang++ \
