@@ -5,7 +5,6 @@ EOSIO nodeos docker container compiled with many useful plugins
 
  * https://github.com/eosrio/eos_zmq_plugin
  * https://github.com/EOSLaoMao/elasticsearch_plugin
- * https://github.com/LiquidEOS/eos-rabbitmq-plugin
  * https://github.com/LiquidEOS/eos-producer-heartbeat-plugin
  * https://github.com/EOSLaoMao/blacklist_plugin
  * https://github.com/spoonincode/eosio_all_code_dump_plugin
@@ -17,3 +16,4 @@ EOSIO nodeos docker container compiled with many useful plugins
  * https://github.com/TP-Lab/kafka_plugin - not compiling with latest version
  * https://github.com/tiboong/eosio_ledger_plugin - not compiling with latest version
  * https://github.com/asiniscalchi/eosio_sql_plugin - not compiling with latest version
+ * https://github.com/LiquidEOS/eos-rabbitmq-plugin - not compiling with latest version
