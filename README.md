@@ -1,7 +1,7 @@
 # docker-eosio-nodeos-plugins
 EOSIO nodeos docker container compiled with many useful plugins
 
-## Included plugins (non enabled by default)
+## Included plugins (not enabled by default)
 
  * https://github.com/eosrio/eos_zmq_plugin
  * https://github.com/EOSLaoMao/elasticsearch_plugin
